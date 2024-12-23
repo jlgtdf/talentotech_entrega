@@ -1,0 +1,343 @@
+* {
+    margin: 0%;
+}
+
+/* ESTE ES EL ESTILO PARA QUE EL BOTÓN VUELVA ARRIBA */
+.volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: rgb(253, 171, 48);
+    font-size: 100px;
+}
+
+/* ESTE ES EL ESTILO PARA LA LÍNEA HORIZONTAL HR */
+hr {
+    margin: auto;
+    width: 75%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+
+}
+
+/* ACÁ COMIENZA CSS PARA HEADER */
+header {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 250px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav li a {
+    display: block;
+    color: #696464;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav li {
+    border-left-color: rgb(26, 147, 163);
+    border-left-width: 3px;
+    border-left-style: dashed;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav li i {
+    font-size: 25px;
+    color: #696464;
+
+
+}
+
+/* ACÁ FINALIZA EL ESTILO DEL HEADER */
+
+
+
+
+/* ACÁ COMIENZA PARA EL MAIN Y SUS SECCIONES */
+
+.consulta {
+    background-image: url(./Images/img_principal.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+main section h1 {
+    text-align: left;
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    text-shadow: 5px 5px 10px black;
+
+}
+
+.consulta p {
+    text-align: left;
+    font-size: 18px;
+    padding: 2px;
+    color: #ffffff;
+
+}
+
+main section button {
+    text-align: left;
+    color: rgb(0, 0, 0);
+
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: rgb(0, 0, 0 / 50%);
+
+}
+
+/* COMIENZO DE LA SECCION SERVICIOS */
+.tarjetas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    margin: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.card i {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(223, 160, 24);
+    margin-bottom: 20px;
+
+
+
+}
+
+.card h4 {
+    color: grey;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.card p {
+    font-size: 13px;
+    color: gray;
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 25px;
+    margin-top: 20px;
+
+}
+
+/* FIN DE LA SECCION SERVICIOS */
+
+
+
+/* INICIO DEL FORMULARIO */
+
+.formulario {
+    line-height: 40px;
+    padding: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #20b2ff;
+}
+
+input {
+    margin-left: 100px;
+}
+
+label {
+    margin-left: 100px;
+}
+
+textarea {
+    margin-left: 100px;
+    width: 400px;
+    height: 200px;
+}
+
+
+
+/* FIN DEL FORMULARIO */
+
+/* INICIO DE LA SECCION SOBRE NOSOTROS */
+.nosotros {
+    background-color: #7ed958;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+    align-content: center;
+
+}
+
+.texto_nosotros {
+    width: 40%;
+}
+
+.nosotros img {
+    width: 300px;
+    border-radius: 40px;
+
+}
+
+.nosotros p {
+
+    line-height: 30px;
+    text-align: justify;
+    text-indent: 100px;
+}
+
+
+/* COMIENZO DEl FOOTER  */
+
+footer {
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background-color: rgb(253, 171, 48);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #7a7979;
+}
+
+footer p {
+    font-size: 20px;
+
+}
+
+.columna {
+    width: 200px;
+    margin: 20px;
+    text-align: left;
+
+    line-height: 40px;
+}
+
+.columna i {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    line-height: 25px;
+    margin-left: 75px;
+}
+
+.columna ul {
+    list-style: none;
+}
+
+.columna li {
+    line-height: 40px;
+    margin: 0%;
+}
+
+.columna h3 {
+    color: #141414;
+    text-decoration: underline;
+}
+
+#icono_footer {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 0%;
+    margin-right: 5px;
+}
+
+/* FIN DE LA SECCION FOOTER  */
+
+/* INICIA LA SECCION PRODUCTO */
+.comprar {
+    /* padding: 5em; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+.producto {
+    width: 15em;
+    /* height: 20em; */
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    box-shadow: 0px 2px 5px #000000;
+    margin: 1em;
+
+}
+
+.producto:hover {
+    box-shadow: 0px 0px 2px #000000;
+}
+
+
+.producto img {
+    width: 10em;
+    margin: auto;
+}
+
+.producto h3 {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.valor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.valor i {
+    font-size: 50px;
+
+}
