@@ -1,9 +1,9 @@
-Título: Un título claro y conciso que describa el proyecto.
-Descripción: Una breve explicación de qué hace el proyecto y cuál es su objetivo principal.
-Tecnologías utilizadas: Un listado de los lenguajes de programación, frameworks y herramientas utilizadas en el proyecto.
-Cómo instalar y ejecutar el proyecto: Instrucciones paso a paso para clonar el repositorio, instalar las dependencias y ejecutar el proyecto.
-Cómo contribuir: Si quieres que otros contribuyan a tu proyecto, incluye una guía sobre cómo hacerlo, como por ejemplo, cómo crear una nueva rama, realizar un pull request, etc.
-Licencia: Especifica la licencia bajo la cual se distribuye el código (por ejemplo, MIT, GPL, etc.).
-Ejemplos de uso: Si es posible, incluye algunos ejemplos de cómo utilizar el proyecto.
-Contribuyentes: Menciona a las personas que han contribuido al proyecto.
-Enlaces: Incluye enlaces a la documentación oficial, a los issues, etc.
+**Título:** JLG Diseño audiovisual- 
+
+**Descripción:**Es una web creada solo con el objetivo de plasmar las tecnologías web, utilizadas en el curso de formación TALENTO TECH. 
+
+**Tecnologías utilizadas:**  En este proyecto se han utilizado el lenguaje de marcado de hipertexto (HTML5), el lenguaje de estilos (CSS3) y el lenguaje de programación JavaScript.
+
+
+**Enlaces:** para visualezar los archivos del proyecto lo pueden hacer a la siguiente direcció del repositorio de github https://github.com/jlgtdf/talentotech_entrega.git
+y para ver el sitio publicado en  https://jlgtdf.github.io/talentotech_entrega/
