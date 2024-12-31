@@ -80,10 +80,11 @@ nav li i {
 /* ACÁ COMIENZA PARA EL MAIN Y SUS SECCIONES */
 
 .consulta {
-    background-image: url(./Images/img_principal.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 20px;
+   width: 100%;
+   background-image: url(./Images/consultanos.png);
+ /* background-size: cover;
+        background-repeat: no-repeat;
+    padding: 20px; */
 }
 
 main section h1 {
@@ -169,6 +170,7 @@ main section button {
 
 
 
+
 /* INICIO DEL FORMULARIO */
 
 .formulario {
@@ -226,6 +228,86 @@ textarea {
     text-indent: 100px;
 }
 
+/* INICIA LA SECCION PRODUCTOS */
+#seccion_compras {
+
+    width: 100%;
+    height: auto;
+
+}
+.listado-productos {
+    /* padding: 5em; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+.listado-productos article {
+    width: 15em;
+    /* height: 20em; */
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    box-shadow: 0px 2px 5px #000000;
+    margin: 1em;
+}
+
+
+.listado-productos article:hover {
+    box-shadow: 0px 0px 2px #f8c724;
+}
+
+
+.listado-productos img {
+    width: 10em;
+    margin: auto;
+}
+
+.listado-productos h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+
+}
+
+.listado-productos p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.listado-productos button {
+    background-color: #20b113;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+}
+ .listado-productos a {
+    text-decoration: none;
+    color: #f7c111;
+    text-align: center;
+    font-size: 50px;
+}
+#f_precio{
+    color: #000000;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
 
 /* COMIENZO DEl FOOTER  */
 
@@ -286,83 +368,60 @@ footer p {
 
 /* FIN DE LA SECCION FOOTER  */
 
-/* INICIA LA SECCION PRODUCTO */
-.comprar {
-    /* padding: 5em; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
 
-
-}
-
-.producto {
-    width: 15em;
-    /* height: 20em; */
-    background-color: #ffffff;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #000000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5px;
-    box-shadow: 0px 2px 5px #000000;
-    margin: 1em;
-
-}
-
-.producto:hover {
-    box-shadow: 0px 0px 2px #000000;
-}
-
-
-.producto img {
-    width: 10em;
-    margin: auto;
-}
-
-.producto h3 {
-    text-align: center;
-    margin-top: 20px;
-
-}
-
-.valor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.valor i {
-    font-size: 50px;
-
-}
 /* ESTILOS PARA EL CARRITO DE COMPRAS */
+.header_carrito{
+width: 100%;
+height: auto;
+
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid #000;
+    width: 100%;
+}
+th{
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+} 
+td{
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+thead{
+    background-color: #ffbb00;
+}
+
+
 #carrito {
     margin-top: 20px;
-    }
-    #lista-carrito {
+}
+
+#lista-carrito {
     list-style: none;
     padding: 0;
-    }
-    #lista-carrito li {
+}
+
+#lista-carrito li {
     background-color: #f4f4f4;
     margin: 5px 0;
     padding: 10px;
     border: 1px solid #ccc;
-    }
-    #vaciar-carrito {
+}
+
+#vaciar-carrito {
     margin-top: 10px;
     background-color: red;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    }
-    #vaciar-carrito:hover {
+}
+
+#vaciar-carrito:hover {
     background-color: darkred;
-    }
+}

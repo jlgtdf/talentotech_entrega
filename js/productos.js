@@ -60,8 +60,9 @@ const html=`
                 <h3>${producto.nombre}</h3>
                 <img src="./images/${producto.imagen}" alt="${producto.nombre}">
                 <p>${producto.descripcion}</p>
-                <p>$${producto.precio}</p>
+                <p id="f_precio">$${producto.precio}</p>
                 <button type="button" class="agregar">agregar</button>
+               <a href="./carrito.html"><i class="bi bi-cart"></i></a>
             </article>
 `;
 listadoProductos.innerHTML += html;

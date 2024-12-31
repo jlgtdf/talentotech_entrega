@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>carrito de compras</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/estilo.css">
 </head>
 <body>
-    <ul>
-        <li><a href="./index.html">INICIO</a></li>
-        <li><a href="./carrito.html">CARRITO</a></li>
-    </ul>
-<!-- CARRITO -->
-<h1>Mi Tienda</h1>
+  <body>
 
+    <a href="#inicio" class="volver-arriba"> <i class="bi bi-file-arrow-up-fill"></i></a>
+    <!-- ACÁ COMIENZA EL ENCABEZADO -->
+    <div class="header_carrito">
+        <img src="Images/carrito-banner.jpg" alt="Logo José Luis Gómez" id="carrito_banner">     
+    </div>
+
+    <!-- ACÁ FINALIZA EL ENCABEZADO -->
+<!-- CARRITO -->
+ <br>
+<h1 style="text-align: center;">MI CARRITO</h1>
+<br>
 <section class="carrito">
-  <h2>Carrito</h2>
+ 
 
   <table>
     <thead>
@@ -24,6 +30,7 @@
         <th>Cantidad</th>
         <th>Precio</th>
         <th>Subtotal</th>
+        
       </tr>
     </thead>
     <tbody class="items">
@@ -32,13 +39,14 @@
         <td>Cantidad</td>
         <td>Precio</td>
         <td>Subtotal</td>
+      
       </tr>
      
     </tbody>
   </table>
 </section>
 
-
+<a href="./index.html">VOLVER A PRODUCTOS</a>
    <script src="./js/carrito.js"></script>
 </body>
 </html>

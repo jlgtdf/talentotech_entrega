@@ -17,7 +17,7 @@ carrito.forEach((item) => {
             <td>$ ${item.precio}</td>
             <td>$ ${item.cantidad*item.precio}</td>
         </tr>
-  
+         
     `;
  //ACUMULO LA CANTIDAD Y LA SUMA DE LOS MONTOS 
 //  totalCantidad += item.cantidad;
