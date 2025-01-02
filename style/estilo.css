@@ -22,6 +22,7 @@ hr {
 }
 
 /* ACÁ COMIENZA CSS PARA HEADER */
+
 header {
     width: 100%;
     padding: 5px;
@@ -37,7 +38,7 @@ header img {
     width: 250px;
 }
 
-nav ul {
+/* nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -70,8 +71,87 @@ nav li i {
     color: #696464;
 
 
-}
-
+} */
+/* Estilos básicos para el menú */
+/* nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+    flex-direction: column; /* Cambia a columna */
+    /* align-items: center; 
+    position: fixed; 
+    top: 0;
+    right: 0;
+    width: 100%; 
+    height: 100vh; 
+    padding-top: 50px; 
+    text-align: center; 
+    transition: all 0.3s ease; 
+    display: none; /* Ocultar inicialmente */
+  /* }
+  
+  nav li a {
+    display: block;
+    color: #696464;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  nav li {
+    border-left-color: rgb(26, 147, 163);
+    border-left-width: 3px;
+    border-left-style: dashed;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  nav li i {
+    font-size: 25px;
+    color: #696464;
+  }
+   */
+  /* Estilos para el icono del menú hamburguesa */
+  /* #menu-toggle {
+    display: none;
+  }
+  
+  #menu-toggle:checked + label span {
+    background: #fff;
+  }
+  
+  #menu-toggle:checked + label span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+  
+  #menu-toggle:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #menu-toggle:checked + label span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -8px;
+  } */
+  
+  /* Mostrar el menú cuando el checkbox esté marcado */
+  /* #menu-toggle:checked ~ nav {
+    display: block; /* Mostrar el menú */
+    /* flex-direction: column; /* Mantener la columna al abrir */
+  } */ */
+  
+  /* Ajustar el diseño del menú para pantallas pequeñas */
+  /* @media (max-width: 768px) {
+    #menu-toggle {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+    }
+  } */ */ */
 /* ACÁ FINALIZA EL ESTILO DEL HEADER */
 
 
