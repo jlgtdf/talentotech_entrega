@@ -160,25 +160,32 @@
         <hr>
         <!-- FIN DE LA SECCION  -->
         <section class="formulario" id="consulta">
-            <h1>ESCRIBINOS TU CONSULTA...</h1>
-            <form action="Consultas">
-                <label for="nombre">NOMBRE</label>
-                <input type="text"><br>
-                <label for="apellido">APELLIDO</label>
-                <input type="text"><br>
-                <label for="edad">EDAD</label>
-                <input type="number"><br>
-                <label for="telefono">TELÉFONO</label>
-                <input type="number"><br>
-                <label for="email">CORREO ELECTRÓNICO</label>
-                <input type="email" id="email"><br>
-                <label for="consulta"> TU CONSULTA</label><br>
-                <textarea name="consulta" id=""></textarea><br>
+            <form action="" method="post">
+                <div>
+                  <label for="">Nombre</label>
+                  <input type="text" id="nombre" />
+                  <span id="error-nombre"></span>
+                </div>
+                <div>
+                    <label for="">Apellido</label>
+                    <input type="text" id="apellido" />
+                    <span id="error-apellido"></span>
+                  </div>
+        
+                <div>
+                  <label for="">Correo</label>
+                  <input type="email" id="correo" />
+                </div>
+                <div>
+                    <label for="">Tu mensaje</label><br>
+                    <textarea name="" id="mensaje"></textarea>
+                  </div>
+                
+                
+        
                 <button type="submit">Enviar</button>
-                <button type="reset">borrar</button>
-
-            </form>
-
+              </form>
+            </main>
 
 
 
@@ -187,16 +194,10 @@
         <hr>
 
         <!-- ACA EMPIEZA LA SECCION DE COMPRAS -->
-        <img src="./Images/banner-tienda-online.jpg" alt="banner de la tienda Online" id="seccion_compras">
-        <section class="listado-productos">
+        <img src="./Images/banner-tienda-online.jpg" alt="banner de la tienda Online" id="seccion_compras" >
+        <section id="listado-productos" class="listado-productos">
 
-            <article data-id="">
-                <h3></h3>
-                <p></p>
-                <p>$</p>
-                <button type="button" class="agregar">agregar</button>
-
-            </article>
+          
         </section>
     </main>
 

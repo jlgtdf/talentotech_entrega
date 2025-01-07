@@ -1,103 +1,93 @@
-const productos = [
-  {
-    id: 1,
-    nombre: "Producto 1",
-    descripcion: "descripcion producto 1",
-    imagen: "imagen-1.jpg",
-    precio: 10,
-    stock: 10,
-  },
-  {
-    id: 2,
-    nombre: "Producto 2",
-    descripcion: "descripcion producto 2",
-    imagen: "imagen-2.jpg",
-    precio: 20,
-    stock: 10,
-  },
-  {
-    id: 3,
-    nombre: "Producto 3",
-    descripcion: "descripcion producto 3",
-    imagen: "imagen-3.jpg",
-    precio: 30,
-    stock: 30,
-  },
-  {
-    id: 4,
-    nombre: "Producto 4",
-    descripcion: "descripcion producto 4",
-    imagen: "imagen-4.jpg",
-    precio: 50000,
-    stock: 400,
-  },
-  {
-    id: 5,
-    nombre: "Producto 5",
-    descripcion: "descripcion producto 5",
-    imagen: "imagen-5.jpg",
-    precio: 40000,
-    stock: 500,
-  },
-  {
-    id: 6,
-    nombre: "Producto 6",
-    descripcion: "descripcion producto 6",
-    imagen: "imagen-6.jpg",
-    precio: 450,
-    stock: 300,
-  },
-];
-
-
-const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-
-const listadoProductos = document.querySelector(".listado-productos");
-listadoProductos.innerHTML ="";
-productos.forEach((producto)=>{
-const html=`
-            <article data-id="${producto.id}">
-                <h3>${producto.nombre}</h3>
-                <img src="./images/${producto.imagen}" alt="${producto.nombre}">
-                <p>${producto.descripcion}</p>
-                <p id="f_precio">$${producto.precio}</p>
-                <button type="button" class="agregar">agregar</button>
-               <a href="./carrito.html"><i class="bi bi-cart"></i></a>
+let arrayProductos=[] 
+const crearHTML = (item) => {
+        const html = `
+            <article data-id="${item.id}">
+            <div class="card">
+            
+                <img src="./Images/${item.imagen}" alt="${item.descripcion}">
+                <h3>${item.nombre}</h3>
+                <p>${item.descripcion}</p>
+                <p id="f_precio">$ ${item.precio}</p>
+                <button type="button" class="agregar">Agregar</button>
+                 <a href="./carrito.html"><i class="bi bi-cart"></i></a>
+            </div>
             </article>
-`;
-listadoProductos.innerHTML += html;
-});
-
-document.addEventListener("click", (event)=>{
+    `
+  return html;
+  };
+ 
+  const mostrarProductos = async () => {
+//    let arrayProductos=[] 
+    try {
+      const response = await  fetch('./js/productos.json');
+      // console.log(response);
+      //const arrayProductos = await response.json();
+      // le saque el const
+      arrayProductos = await response.json();
+      console.log(arrayProductos);
     
-    if (event.target.classList.contains("agregar")){
- const id = event.target.closest("article").dataset.id;
-// CODIGO PARA QUE NO SE REPITAN LAS FILAS CON LOS PRODUCTOS SELECCIONADOS , PERO SI LA CANTIDAD VARÍE
+      // busca en dom elemento con la clase listado-productos
+      const listadoProductos = document.querySelector(".listado-productos"); 
 
-const index=carrito.findIndex((item)=>item.id==id);
-if (index == -1) {
+      listadoProductos.innerHTML = "";
 
- const elemento=productos.find((producto)=>producto.id==id);
-console.log(elemento);
+      arrayProductos.forEach((item) => {
 
-const {nombre, precio}=elemento;
+        const elementos = crearHTML(item);
+        // console.log(elementos); 
+        listadoProductos.innerHTML += elementos; 
 
-const producto={
-    id:id,
-    nombre:nombre,
-    precio:precio,
-    cantidad:1,
-};
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
-carrito.push(producto);
-}
-else
-{
-    const producto = carrito[index];
-    producto.cantidad++;
-}
-localStorage.setItem("carrito", JSON.stringify(carrito));
 
-}
+  carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+   console.log(carrito);
+  //mostrarProductos();
+  //let arrayProductos=[] 
+  // Escucho todos los eventos click el documento
+  document.addEventListener("click", (event) => {
+  // Si el elemento donde se hizo click contiene la clase 'agregar'
+  if (event.target.classList.contains("agregar")) {
+    // Busco el contenedor mas cercano que se un 'article'
+    // Obtengo el id del atributo data-id
+    const id = event.target.closest("article").dataset.id;
 
+    const index = carrito.findIndex((item) => item.id == id);
+
+    if (index == -1) {
+      // Busco el elemento 'producto' dentro del array producto que tenga el 'id'
+      console.log(arrayProductos)
+      const elemento = arrayProductos.find((producto) => producto.id == id);
+      console.log(elemento);
+      console.log(arrayProductos[2]);
+  
+      // Uso destructuring para creo las constante con los valores del Objeto
+      const { nombre, precio } = elemento;
+
+      // Creo el objeto producto para insertar en el carrito
+      const producto = {
+        id: id,
+        nombre: nombre,
+        precio: precio,
+        cantidad: 1,
+      };
+
+      // let { cantidad } = producto;
+      // console.log(cantidad);
+
+      carrito.push(producto);
+    } else {
+      const producto = carrito[index];
+      producto.cantidad++;
+    }
+
+    // Guardo en el localStorage el array carrito en formato JSON
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+  }
 });
+
+mostrarProductos()

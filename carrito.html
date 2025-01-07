@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>carrito de compras</title>
     <link rel="stylesheet" href="./style/estilo.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
   <body>
@@ -17,36 +20,77 @@
 
     <!-- ACÁ FINALIZA EL ENCABEZADO -->
 <!-- CARRITO -->
- <br>
+<main>
+<br>
 <h1 style="text-align: center;">MI CARRITO</h1>
 <br>
-<section class="carrito">
+
  
+  <div id="carrito">
+    <ul id="lista-carrito"></ul>
+    <div id="subtotal">total a pagar</div>
+    <button id="vaciar-carrito">Vaciar Carrito</button>
+</div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>Cantidad</th>
-        <th>Precio</th>
-        <th>Subtotal</th>
-        
-      </tr>
-    </thead>
-    <tbody class="items">
-      <tr data-id="">
-        <td>Nombre</td>
-        <td>Cantidad</td>
-        <td>Precio</td>
-        <td>Subtotal</td>
-      
-      </tr>
-     
-    </tbody>
-  </table>
-</section>
 
-<a href="./index.html">VOLVER A PRODUCTOS</a>
+</main>
+<a href="./index.html#seccion_compras">VOLVER A PRODUCTOS</a>
    <script src="./js/carrito.js"></script>
-</body>
+<br><br>
+<footer>
+  <!-- PRIMERA COLUMNA DEL FOOTER -->
+  <div class="columna">
+      <p>
+      <h3>© 2024 JLG DISEÑO AUDIOVISUAL.</h3><br> </p>
+      <p>Todos los derechos reservados.</p>
+      <p> Las imágenes y videos contenidos en este sitio web son propiedad exclusiva de JLG Diseño Audiovisual y
+          no pueden ser utilizados sin autorización previa.</p>
+  </div>
+
+  <!--  SEGUNDA DEL FOOTER -->
+  <div class="columna">
+      <h3>NUESTRAS REDES SOCIALES</h3>
+      <br>
+      <p>Síguenos en redes sociales para estar al día de nuestras últimas novedades.</p>
+      <br>
+      <i class="bi bi-facebook"></i><br>
+      <i class="bi bi-instagram"></i><br>
+      <i class="bi bi-twitter-x"></i><br>
+      <i class="bi bi-whatsapp"></i>
+  </div>
+  <!-- TERCERA COLUMNA DEL FOOTER -->
+  <div class="columna">
+      <h3>INFORMACIÓN DE CONTACTO</h3>
+      <br>
+      <ul>
+          <li><i class="bi bi-geo-alt" id="icono_footer"></i> Ester Reynoso 4430 </li>
+          <li><i class="bi bi-phone" id="icono_footer"></i> 2964478585 </li>
+          <li><i class="bi bi-envelope" id="icono_footer"></i>design@visual.com</li>
+          <li><i class="bi bi-globe-americas" id="icono_footer"></i>Mapa</li>
+      </ul>
+  </div>
+  <!-- CUARTA COLUMNA DEL FOOTER -->
+  <div class="columna">
+      <h3>ENLACES ÚTILES</h3>
+      <br>
+      <ul>
+          <a href="">
+              <li>INICIO</li>
+          </a>
+          <a href="">
+              <li>ACERCA DE</li>
+          </a>
+          <a href="">
+              <li>SERVICIOS</l>
+          </a>
+          <a href="">
+              <li>CONSULTA</li>
+          </a>
+      </ul>
+      <br>
+  </div>
+
+
+</footer>
+  </body>
 </html>
